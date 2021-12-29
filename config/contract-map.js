@@ -1,6 +1,16 @@
 module.exports = [
-  // "Address.sol",
-  // "Context.sol",
-  // ...
-  // "SafeMath.sol",
+  "AddressUpgradeable.sol",
+  "ContextUpgradeable.sol",
+  "IDEXFactory.sol",
+  "IDEXPair.sol",
+  "IDEXRouter.sol",
+  "IERC20MetadataUpgradeable.sol",
+  "IERC20Upgradeable.sol",
+  "IDOOiTToken.sol",
+  "Initializable.sol",
+  "IPinkAntiBot.sol",
+  "DOOiT.sol",
+  "OwnableUpgradeable.sol",
+  "ReentrancyGuardUpgradeable.sol",
+  "SafeMath.sol",
 ]

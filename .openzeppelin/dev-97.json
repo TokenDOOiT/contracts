@@ -1,0 +1,401 @@
+{
+  "contracts": {
+    "DOOiT": {
+      "address": "0x37634b14645c069914787C762c2Ef31fcEB6e888",
+      "constructorCode": "608060405234801561001057600080fd5b50614157806100206000396000f3fe",
+      "bodyBytecodeHash": "6d89a00c72572c74a415c49aa9ea439cd7693b6ac7cfc8308d918d517bef1bdb",
+      "localBytecodeHash": "743e459aaaaf720382652114e7bf0571c2ce064b7ff457dcddbe6a1f329aa689",
+      "deployedBytecodeHash": "743e459aaaaf720382652114e7bf0571c2ce064b7ff457dcddbe6a1f329aa689",
+      "types": {
+        "t_bool": {
+          "id": "t_bool",
+          "kind": "elementary",
+          "label": "bool"
+        },
+        "t_uint256": {
+          "id": "t_uint256",
+          "kind": "elementary",
+          "label": "uint256"
+        },
+        "t_array:50<t_uint256>": {
+          "id": "t_array:50<t_uint256>",
+          "valueType": "t_uint256",
+          "length": "50",
+          "kind": "array",
+          "label": "uint256[50]"
+        },
+        "t_address": {
+          "id": "t_address",
+          "kind": "elementary",
+          "label": "address"
+        },
+        "t_mapping<t_bool>": {
+          "id": "t_mapping<t_bool>",
+          "valueType": "t_bool",
+          "label": "mapping(key => bool)",
+          "kind": "mapping"
+        },
+        "t_array:49<t_uint256>": {
+          "id": "t_array:49<t_uint256>",
+          "valueType": "t_uint256",
+          "length": "49",
+          "kind": "array",
+          "label": "uint256[49]"
+        },
+        "t_string": {
+          "id": "t_string",
+          "kind": "elementary",
+          "label": "string"
+        },
+        "t_mapping<t_uint256>": {
+          "id": "t_mapping<t_uint256>",
+          "valueType": "t_uint256",
+          "label": "mapping(key => uint256)",
+          "kind": "mapping"
+        },
+        "t_array:dyn<t_address>": {
+          "id": "t_array:dyn<t_address>",
+          "valueType": "t_address",
+          "length": "dyn",
+          "kind": "array",
+          "label": "address[]"
+        },
+        "t_uint8": {
+          "id": "t_uint8",
+          "kind": "elementary",
+          "label": "uint8"
+        }
+      },
+      "storage": [
+        {
+          "contract": "Initializable",
+          "path": "project:/contracts/Initializable.sol",
+          "label": "_initialized",
+          "astId": 6397,
+          "type": "t_bool",
+          "src": "1230:25:18"
+        },
+        {
+          "contract": "Initializable",
+          "path": "project:/contracts/Initializable.sol",
+          "label": "_initializing",
+          "astId": 6400,
+          "type": "t_bool",
+          "src": "1358:26:18"
+        },
+        {
+          "contract": "ContextUpgradeable",
+          "path": "project:/contracts/ContextUpgradeable.sol",
+          "label": "__gap",
+          "astId": 1160,
+          "type": "t_array:50<t_uint256>",
+          "src": "1365:25:4"
+        },
+        {
+          "contract": "OwnableUpgradeable",
+          "path": "project:/contracts/OwnableUpgradeable.sol",
+          "label": "_owner",
+          "astId": 6567,
+          "type": "t_address",
+          "src": "263:22:20"
+        },
+        {
+          "contract": "OwnableUpgradeable",
+          "path": "project:/contracts/OwnableUpgradeable.sol",
+          "label": "authorizations",
+          "astId": 6571,
+          "type": "t_mapping<t_bool>",
+          "src": "291:48:20"
+        },
+        {
+          "contract": "OwnableUpgradeable",
+          "path": "project:/contracts/OwnableUpgradeable.sol",
+          "label": "__gap",
+          "astId": 6751,
+          "type": "t_array:49<t_uint256>",
+          "src": "2534:25:20"
+        },
+        {
+          "contract": "ReentrancyGuardUpgradeable",
+          "path": "project:/contracts/ReentrancyGuardUpgradeable.sol",
+          "label": "_status",
+          "astId": 6818,
+          "type": "t_uint256",
+          "src": "1849:23:22"
+        },
+        {
+          "contract": "DOOiT",
+          "path": "project:/contracts/DOOiT.sol",
+          "label": "VERSION",
+          "astId": 1224,
+          "type": "t_string",
+          "src": "2073:21:6"
+        },
+        {
+          "contract": "DOOiT",
+          "path": "project:/contracts/DOOiT.sol",
+          "label": "_rOwned",
+          "astId": 1228,
+          "type": "t_mapping<t_uint256>",
+          "src": "2099:43:6"
+        },
+        {
+          "contract": "DOOiT",
+          "path": "project:/contracts/DOOiT.sol",
+          "label": "_tOwned",
+          "astId": 1232,
+          "type": "t_mapping<t_uint256>",
+          "src": "2146:43:6"
+        },
+        {
+          "contract": "DOOiT",
+          "path": "project:/contracts/DOOiT.sol",
+          "label": "_allowances",
+          "astId": 1238,
+          "type": "t_mapping<t_uint256>",
+          "src": "2193:67:6"
+        },
+        {
+          "contract": "DOOiT",
+          "path": "project:/contracts/DOOiT.sol",
+          "label": "_isSuspended",
+          "astId": 1242,
+          "type": "t_mapping<t_uint256>",
+          "src": "2265:48:6"
+        },
+        {
+          "contract": "DOOiT",
+          "path": "project:/contracts/DOOiT.sol",
+          "label": "_isExcludedFromFee",
+          "astId": 1246,
+          "type": "t_mapping<t_bool>",
+          "src": "2317:51:6"
+        },
+        {
+          "contract": "DOOiT",
+          "path": "project:/contracts/DOOiT.sol",
+          "label": "_isExcludedFromMaxTx",
+          "astId": 1250,
+          "type": "t_mapping<t_bool>",
+          "src": "2372:53:6"
+        },
+        {
+          "contract": "DOOiT",
+          "path": "project:/contracts/DOOiT.sol",
+          "label": "_isExcluded",
+          "astId": 1254,
+          "type": "t_mapping<t_bool>",
+          "src": "2429:44:6"
+        },
+        {
+          "contract": "DOOiT",
+          "path": "project:/contracts/DOOiT.sol",
+          "label": "_excluded",
+          "astId": 1257,
+          "type": "t_array:dyn<t_address>",
+          "src": "2477:27:6"
+        },
+        {
+          "contract": "DOOiT",
+          "path": "project:/contracts/DOOiT.sol",
+          "label": "_name",
+          "astId": 1259,
+          "type": "t_string",
+          "src": "2509:20:6"
+        },
+        {
+          "contract": "DOOiT",
+          "path": "project:/contracts/DOOiT.sol",
+          "label": "_symbol",
+          "astId": 1261,
+          "type": "t_string",
+          "src": "2533:22:6"
+        },
+        {
+          "contract": "DOOiT",
+          "path": "project:/contracts/DOOiT.sol",
+          "label": "_decimals",
+          "astId": 1263,
+          "type": "t_uint8",
+          "src": "2559:23:6"
+        },
+        {
+          "contract": "DOOiT",
+          "path": "project:/contracts/DOOiT.sol",
+          "label": "_tTotal",
+          "astId": 1265,
+          "type": "t_uint256",
+          "src": "2586:23:6"
+        },
+        {
+          "contract": "DOOiT",
+          "path": "project:/contracts/DOOiT.sol",
+          "label": "_rTotal",
+          "astId": 1267,
+          "type": "t_uint256",
+          "src": "2651:23:6"
+        },
+        {
+          "contract": "DOOiT",
+          "path": "project:/contracts/DOOiT.sol",
+          "label": "_tFeeTotal",
+          "astId": 1269,
+          "type": "t_uint256",
+          "src": "2721:26:6"
+        },
+        {
+          "contract": "DOOiT",
+          "path": "project:/contracts/DOOiT.sol",
+          "label": "_taxFee",
+          "astId": 1271,
+          "type": "t_uint256",
+          "src": "2784:22:6"
+        },
+        {
+          "contract": "DOOiT",
+          "path": "project:/contracts/DOOiT.sol",
+          "label": "_previousTaxFee",
+          "astId": 1273,
+          "type": "t_uint256",
+          "src": "2861:31:6"
+        },
+        {
+          "contract": "DOOiT",
+          "path": "project:/contracts/DOOiT.sol",
+          "label": "_liquidityFee",
+          "astId": 1275,
+          "type": "t_uint256",
+          "src": "2948:28:6"
+        },
+        {
+          "contract": "DOOiT",
+          "path": "project:/contracts/DOOiT.sol",
+          "label": "_previousLiquidityFee",
+          "astId": 1277,
+          "type": "t_uint256",
+          "src": "3023:37:6"
+        },
+        {
+          "contract": "DOOiT",
+          "path": "project:/contracts/DOOiT.sol",
+          "label": "_marketingFee",
+          "astId": 1279,
+          "type": "t_uint256",
+          "src": "3108:28:6"
+        },
+        {
+          "contract": "DOOiT",
+          "path": "project:/contracts/DOOiT.sol",
+          "label": "_previousMarketingFee",
+          "astId": 1281,
+          "type": "t_uint256",
+          "src": "3185:37:6"
+        },
+        {
+          "contract": "DOOiT",
+          "path": "project:/contracts/DOOiT.sol",
+          "label": "pancakeRouter",
+          "astId": 1284,
+          "type": "t_address",
+          "src": "3272:37:6"
+        },
+        {
+          "contract": "DOOiT",
+          "path": "project:/contracts/DOOiT.sol",
+          "label": "pancakePair",
+          "astId": 1286,
+          "type": "t_address",
+          "src": "3340:26:6"
+        },
+        {
+          "contract": "DOOiT",
+          "path": "project:/contracts/DOOiT.sol",
+          "label": "_supportAddress",
+          "astId": 1288,
+          "type": "t_address",
+          "src": "3406:30:6"
+        },
+        {
+          "contract": "DOOiT",
+          "path": "project:/contracts/DOOiT.sol",
+          "label": "_marketingAddress",
+          "astId": 1290,
+          "type": "t_address",
+          "src": "3474:32:6"
+        },
+        {
+          "contract": "DOOiT",
+          "path": "project:/contracts/DOOiT.sol",
+          "label": "inSwapAndLiquify",
+          "astId": 1292,
+          "type": "t_bool",
+          "src": "3545:30:6"
+        },
+        {
+          "contract": "DOOiT",
+          "path": "project:/contracts/DOOiT.sol",
+          "label": "swapAndLiquifyEnabled",
+          "astId": 1294,
+          "type": "t_bool",
+          "src": "3579:33:6"
+        },
+        {
+          "contract": "DOOiT",
+          "path": "project:/contracts/DOOiT.sol",
+          "label": "_maxTxAmount",
+          "astId": 1296,
+          "type": "t_uint256",
+          "src": "3669:27:6"
+        },
+        {
+          "contract": "DOOiT",
+          "path": "project:/contracts/DOOiT.sol",
+          "label": "numTokensSellToAddToLiquidity",
+          "astId": 1298,
+          "type": "t_uint256",
+          "src": "3783:45:6"
+        },
+        {
+          "contract": "DOOiT",
+          "path": "project:/contracts/DOOiT.sol",
+          "label": "antiBot",
+          "astId": 1301,
+          "type": "t_address",
+          "src": "3873:27:6"
+        },
+        {
+          "contract": "DOOiT",
+          "path": "project:/contracts/DOOiT.sol",
+          "label": "enableAntiBot",
+          "astId": 1303,
+          "type": "t_bool",
+          "src": "3943:25:6"
+        }
+      ],
+      "warnings": {
+        "hasConstructor": false,
+        "hasSelfDestruct": false,
+        "hasDelegateCall": false,
+        "hasInitialValuesInDeclarations": false,
+        "uninitializedBaseContracts": []
+      }
+    }
+  },
+  "solidityLibs": {},
+  "proxies": {
+    "sc-dooit/DOOiT": [
+      {
+        "address": "0xE12dA201aB4AA92311f1FA8cA38ed13DDFe99f04",
+        "version": "1.0.23",
+        "implementation": "0x37634b14645c069914787C762c2Ef31fcEB6e888",
+        "admin": "0x8295cc13C1C4Dd47BcDB44629cf4c2CD97968588",
+        "kind": "Upgradeable"
+      }
+    ]
+  },
+  "manifestVersion": "2.2",
+  "version": "1.0.23",
+  "proxyAdmin": {
+    "address": "0x8295cc13C1C4Dd47BcDB44629cf4c2CD97968588"
+  }
+}
