@@ -1,0 +1,9 @@
+.openzeppelin
+.verification
+build
+node_modules
+artifacts
+cache
+coverage*
+gasReporterOutput.json
+trash

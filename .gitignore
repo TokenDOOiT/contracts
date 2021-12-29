@@ -1,0 +1,22 @@
+.DS_STORE
+.env
+config/accounts.js
+
+.verification
+trash
+
+node_modules
+coverage
+coverage.json
+typechain
+
+# # Hardhat files
+cache
+artifacts
+
+# # OpenZeppelin files
+# .openzeppelin/.session
+
+# # Garbages
+# __unused
+# __olds
