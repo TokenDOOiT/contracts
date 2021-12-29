@@ -1,4 +1,6 @@
-# Solidity codebase
+# Token DOOiT
+
+For deployed contract, refer [CONTRACT.md](CONTRACT.md)
 
 ## Installation
 
