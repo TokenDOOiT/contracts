@@ -178,7 +178,7 @@ contract DOOiT is
     address[2] memory operationAddresses_,
     address antiBot_
   ) internal initializer {
-    VERSION = "1.0.23";
+    VERSION = "1.0.24";
 
     require(taxFeeBps_ >= 0 && taxFeeBps_ <= 10**4, "Invalid Tax fee");
     require(
@@ -465,7 +465,7 @@ contract DOOiT is
   {
     /* solhint-disable-next-line not-rely-on-time */
     return (
-      (_isSuspended[account] > 0) && (_isSuspended[account] < block.timestamp),
+      (_isSuspended[account] > 0) && (_isSuspended[account] > block.timestamp),
       _isSuspended[account]
     );
   }
