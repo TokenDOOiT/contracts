@@ -1,11 +1,11 @@
 {
   "contracts": {
     "DOOiT": {
-      "address": "0xa739415769Aebc262BC6a7929Bb2c409f0EFC409",
+      "address": "0xF54c7744EB5084667C8461a0c57Aca0DEFe3676f",
       "constructorCode": "608060405234801561001057600080fd5b50614157806100206000396000f3fe",
-      "bodyBytecodeHash": "392883b6be700ddc035d63fade3c82c8267bbf40a34d4580439e1bf0ba10d732",
-      "localBytecodeHash": "37464c55c49c349b035a57c4d1caf752e1b43fc5a04e647a529d2d51faf571d8",
-      "deployedBytecodeHash": "37464c55c49c349b035a57c4d1caf752e1b43fc5a04e647a529d2d51faf571d8",
+      "bodyBytecodeHash": "4b9c8106f1d5dc08ca96f991206fc8095cb348df6c2ef8d605a3e6ea44d539ee",
+      "localBytecodeHash": "5732355b0ccdb0d6f1a7247c3a3f6913c644589843a78a086def5cfe292a61fe",
+      "deployedBytecodeHash": "5732355b0ccdb0d6f1a7247c3a3f6913c644589843a78a086def5cfe292a61fe",
       "types": {
         "t_bool": {
           "id": "t_bool",
@@ -73,7 +73,7 @@
           "label": "_initialized",
           "astId": 6397,
           "type": "t_bool",
-          "src": "1230:25:18"
+          "src": "1222:25:18"
         },
         {
           "contract": "Initializable",
@@ -81,7 +81,7 @@
           "label": "_initializing",
           "astId": 6400,
           "type": "t_bool",
-          "src": "1358:26:18"
+          "src": "1342:26:18"
         },
         {
           "contract": "ContextUpgradeable",
@@ -89,7 +89,7 @@
           "label": "__gap",
           "astId": 1160,
           "type": "t_array:50<t_uint256>",
-          "src": "1365:25:4"
+          "src": "1289:25:4"
         },
         {
           "contract": "OwnableUpgradeable",
@@ -97,7 +97,7 @@
           "label": "_owner",
           "astId": 6567,
           "type": "t_address",
-          "src": "263:22:20"
+          "src": "261:22:20"
         },
         {
           "contract": "OwnableUpgradeable",
@@ -105,7 +105,7 @@
           "label": "authorizations",
           "astId": 6571,
           "type": "t_mapping<t_bool>",
-          "src": "291:48:20"
+          "src": "287:48:20"
         },
         {
           "contract": "OwnableUpgradeable",
@@ -113,7 +113,7 @@
           "label": "__gap",
           "astId": 6751,
           "type": "t_array:49<t_uint256>",
-          "src": "2534:25:20"
+          "src": "2363:25:20"
         },
         {
           "contract": "ReentrancyGuardUpgradeable",
@@ -121,7 +121,7 @@
           "label": "_status",
           "astId": 6818,
           "type": "t_uint256",
-          "src": "1849:23:22"
+          "src": "1822:23:22"
         },
         {
           "contract": "DOOiT",
@@ -129,7 +129,7 @@
           "label": "VERSION",
           "astId": 1224,
           "type": "t_string",
-          "src": "2073:21:6"
+          "src": "2076:21:6"
         },
         {
           "contract": "DOOiT",
@@ -137,7 +137,7 @@
           "label": "_rOwned",
           "astId": 1228,
           "type": "t_mapping<t_uint256>",
-          "src": "2099:43:6"
+          "src": "2102:43:6"
         },
         {
           "contract": "DOOiT",
@@ -145,7 +145,7 @@
           "label": "_tOwned",
           "astId": 1232,
           "type": "t_mapping<t_uint256>",
-          "src": "2146:43:6"
+          "src": "2149:43:6"
         },
         {
           "contract": "DOOiT",
@@ -153,7 +153,7 @@
           "label": "_allowances",
           "astId": 1238,
           "type": "t_mapping<t_uint256>",
-          "src": "2193:67:6"
+          "src": "2196:67:6"
         },
         {
           "contract": "DOOiT",
@@ -161,7 +161,7 @@
           "label": "_isSuspended",
           "astId": 1242,
           "type": "t_mapping<t_uint256>",
-          "src": "2265:48:6"
+          "src": "2268:48:6"
         },
         {
           "contract": "DOOiT",
@@ -169,7 +169,7 @@
           "label": "_isExcludedFromFee",
           "astId": 1246,
           "type": "t_mapping<t_bool>",
-          "src": "2317:51:6"
+          "src": "2320:51:6"
         },
         {
           "contract": "DOOiT",
@@ -177,7 +177,7 @@
           "label": "_isExcludedFromMaxTx",
           "astId": 1250,
           "type": "t_mapping<t_bool>",
-          "src": "2372:53:6"
+          "src": "2375:53:6"
         },
         {
           "contract": "DOOiT",
@@ -185,7 +185,7 @@
           "label": "_isExcluded",
           "astId": 1254,
           "type": "t_mapping<t_bool>",
-          "src": "2429:44:6"
+          "src": "2432:44:6"
         },
         {
           "contract": "DOOiT",
@@ -193,7 +193,7 @@
           "label": "_excluded",
           "astId": 1257,
           "type": "t_array:dyn<t_address>",
-          "src": "2477:27:6"
+          "src": "2480:27:6"
         },
         {
           "contract": "DOOiT",
@@ -201,7 +201,7 @@
           "label": "_name",
           "astId": 1259,
           "type": "t_string",
-          "src": "2509:20:6"
+          "src": "2512:20:6"
         },
         {
           "contract": "DOOiT",
@@ -209,7 +209,7 @@
           "label": "_symbol",
           "astId": 1261,
           "type": "t_string",
-          "src": "2533:22:6"
+          "src": "2536:22:6"
         },
         {
           "contract": "DOOiT",
@@ -217,7 +217,7 @@
           "label": "_decimals",
           "astId": 1263,
           "type": "t_uint8",
-          "src": "2559:23:6"
+          "src": "2562:23:6"
         },
         {
           "contract": "DOOiT",
@@ -225,7 +225,7 @@
           "label": "_tTotal",
           "astId": 1265,
           "type": "t_uint256",
-          "src": "2586:23:6"
+          "src": "2589:23:6"
         },
         {
           "contract": "DOOiT",
@@ -233,7 +233,7 @@
           "label": "_rTotal",
           "astId": 1267,
           "type": "t_uint256",
-          "src": "2651:23:6"
+          "src": "2632:23:6"
         },
         {
           "contract": "DOOiT",
@@ -241,7 +241,7 @@
           "label": "_tFeeTotal",
           "astId": 1269,
           "type": "t_uint256",
-          "src": "2721:26:6"
+          "src": "2680:26:6"
         },
         {
           "contract": "DOOiT",
@@ -249,7 +249,7 @@
           "label": "_taxFee",
           "astId": 1271,
           "type": "t_uint256",
-          "src": "2784:22:6"
+          "src": "2724:22:6"
         },
         {
           "contract": "DOOiT",
@@ -257,7 +257,7 @@
           "label": "_previousTaxFee",
           "astId": 1273,
           "type": "t_uint256",
-          "src": "2861:31:6"
+          "src": "2778:31:6"
         },
         {
           "contract": "DOOiT",
@@ -265,7 +265,7 @@
           "label": "_liquidityFee",
           "astId": 1275,
           "type": "t_uint256",
-          "src": "2948:28:6"
+          "src": "2851:28:6"
         },
         {
           "contract": "DOOiT",
@@ -273,7 +273,7 @@
           "label": "_previousLiquidityFee",
           "astId": 1277,
           "type": "t_uint256",
-          "src": "3023:37:6"
+          "src": "2909:37:6"
         },
         {
           "contract": "DOOiT",
@@ -281,7 +281,7 @@
           "label": "_marketingFee",
           "astId": 1279,
           "type": "t_uint256",
-          "src": "3108:28:6"
+          "src": "2986:28:6"
         },
         {
           "contract": "DOOiT",
@@ -289,7 +289,7 @@
           "label": "_previousMarketingFee",
           "astId": 1281,
           "type": "t_uint256",
-          "src": "3185:37:6"
+          "src": "3046:37:6"
         },
         {
           "contract": "DOOiT",
@@ -297,7 +297,7 @@
           "label": "pancakeRouter",
           "astId": 1284,
           "type": "t_address",
-          "src": "3272:37:6"
+          "src": "3125:37:6"
         },
         {
           "contract": "DOOiT",
@@ -305,7 +305,7 @@
           "label": "pancakePair",
           "astId": 1286,
           "type": "t_address",
-          "src": "3340:26:6"
+          "src": "3185:26:6"
         },
         {
           "contract": "DOOiT",
@@ -313,7 +313,7 @@
           "label": "_supportAddress",
           "astId": 1288,
           "type": "t_address",
-          "src": "3406:30:6"
+          "src": "3232:30:6"
         },
         {
           "contract": "DOOiT",
@@ -321,7 +321,7 @@
           "label": "_marketingAddress",
           "astId": 1290,
           "type": "t_address",
-          "src": "3474:32:6"
+          "src": "3285:32:6"
         },
         {
           "contract": "DOOiT",
@@ -329,7 +329,7 @@
           "label": "inSwapAndLiquify",
           "astId": 1292,
           "type": "t_bool",
-          "src": "3545:30:6"
+          "src": "3343:30:6"
         },
         {
           "contract": "DOOiT",
@@ -337,7 +337,7 @@
           "label": "swapAndLiquifyEnabled",
           "astId": 1294,
           "type": "t_bool",
-          "src": "3579:33:6"
+          "src": "3377:33:6"
         },
         {
           "contract": "DOOiT",
@@ -345,7 +345,7 @@
           "label": "_maxTxAmount",
           "astId": 1296,
           "type": "t_uint256",
-          "src": "3669:27:6"
+          "src": "3455:27:6"
         },
         {
           "contract": "DOOiT",
@@ -353,7 +353,7 @@
           "label": "numTokensSellToAddToLiquidity",
           "astId": 1298,
           "type": "t_uint256",
-          "src": "3783:45:6"
+          "src": "3551:45:6"
         },
         {
           "contract": "DOOiT",
@@ -361,7 +361,7 @@
           "label": "antiBot",
           "astId": 1301,
           "type": "t_address",
-          "src": "3873:27:6"
+          "src": "3641:27:6"
         },
         {
           "contract": "DOOiT",
@@ -369,7 +369,7 @@
           "label": "enableAntiBot",
           "astId": 1303,
           "type": "t_bool",
-          "src": "3943:25:6"
+          "src": "3693:25:6"
         }
       ],
       "warnings": {
@@ -389,7 +389,7 @@
       {
         "address": "0xE12dA201aB4AA92311f1FA8cA38ed13DDFe99f04",
         "version": "1.0.23",
-        "implementation": "0xa739415769Aebc262BC6a7929Bb2c409f0EFC409",
+        "implementation": "0xF54c7744EB5084667C8461a0c57Aca0DEFe3676f",
         "admin": "0x8295cc13C1C4Dd47BcDB44629cf4c2CD97968588",
         "kind": "Upgradeable"
       }

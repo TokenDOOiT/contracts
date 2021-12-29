@@ -65,7 +65,7 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.9+commit.e5eed63a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner_\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"name_\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"symbol_\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"totalSupply_\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"router_\",\"type\":\"address\"},{\"internalType\":\"uint16\",\"name\":\"maxTxBps_\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"taxFeeBps_\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"liquidityFeeBps_\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"charityFeeBps_\",\"type\":\"uint16\"},{\"internalType\":\"address\",\"name\":\"charityAddress_\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"pinkAntiBot_\",\"type\":\"address\"}],\"name\":\"initialize\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/IDOOiTToken.sol\":\"IDOOiTToken\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/IDOOiTToken.sol\":{\"keccak256\":\"0x9f11d1477b22327cfe90212f2a3a8708ca25e258ef4c397528947a2a9344a860\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://3cca69f92ae9b31fa4448b9b8caab2a5497aff5b8a0addc5c80ad43e126e1a79\",\"dweb:/ipfs/QmcPDYH8rny29ucYf37Hrw39BJ8Fnn9U1c2RGhCS71ZV6M\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.9+commit.e5eed63a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner_\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"name_\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"symbol_\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"totalSupply_\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"router_\",\"type\":\"address\"},{\"internalType\":\"uint16\",\"name\":\"maxTxBps_\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"taxFeeBps_\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"liquidityFeeBps_\",\"type\":\"uint16\"},{\"internalType\":\"uint16\",\"name\":\"charityFeeBps_\",\"type\":\"uint16\"},{\"internalType\":\"address\",\"name\":\"charityAddress_\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"pinkAntiBot_\",\"type\":\"address\"}],\"name\":\"initialize\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/IDOOiTToken.sol\":\"IDOOiTToken\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/IDOOiTToken.sol\":{\"keccak256\":\"0x6591b70fe95347eecb32a85d26168087ddf348e45bdd4ecbbf17ee8305aed431\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://fc040ac7b453d34efb53cff123a1a65688d7640e21571847207ba230f7e41f87\",\"dweb:/ipfs/QmUq2rdkvGs2oZWJgoBXRVh1BBChHkKEQpTvxxitHRPCty\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
@@ -73,7 +73,7 @@
   "deployedGeneratedSources": [],
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.8.9;\n\ninterface IDOOiTToken {\n  function initialize(\n    address owner_,\n    string memory name_,\n    string memory symbol_,\n    uint256 totalSupply_,\n    address router_,\n    uint16 maxTxBps_,\n    uint16 taxFeeBps_,\n    uint16 liquidityFeeBps_,\n    uint16 charityFeeBps_,\n    address charityAddress_,\n    address pinkAntiBot_\n  ) external;\n}",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.8.9;\n\ninterface IDOOiTToken {\n  function initialize(\n    address owner_,\n    string memory name_,\n    string memory symbol_,\n    uint256 totalSupply_,\n    address router_,\n    uint16 maxTxBps_,\n    uint16 taxFeeBps_,\n    uint16 liquidityFeeBps_,\n    uint16 charityFeeBps_,\n    address charityAddress_,\n    address pinkAntiBot_\n  ) external;\n}\n",
   "sourcePath": "/Users/ifundeasy/Developer/dooit/sc-dooit/contracts/IDOOiTToken.sol",
   "ast": {
     "absolutePath": "project:/contracts/IDOOiTToken.sol",
@@ -447,7 +447,7 @@
         "usedErrors": []
       }
     ],
-    "src": "32:362:14"
+    "src": "32:363:14"
   },
   "legacyAST": {
     "absolutePath": "project:/contracts/IDOOiTToken.sol",
@@ -821,7 +821,7 @@
         "usedErrors": []
       }
     ],
-    "src": "32:362:14"
+    "src": "32:363:14"
   },
   "compiler": {
     "name": "solc",
@@ -829,7 +829,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.3",
-  "updatedAt": "2021-12-27T18:30:13.714Z",
+  "updatedAt": "2021-12-27T18:55:56.520Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

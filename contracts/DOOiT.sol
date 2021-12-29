@@ -39,8 +39,8 @@ import "./ReentrancyGuardUpgradeable.sol";
  * allowances. See {IERC20-approve}.
  */
 /* solhint-disable-next-line max-states-count */
-// Initializable,
 contract DOOiT is
+  // Initializable,
   OwnableUpgradeable,
   IERC20MetadataUpgradeable,
   ReentrancyGuardUpgradeable
@@ -123,8 +123,6 @@ contract DOOiT is
    * @param marketingFeeBps_ uint16: Charity fee bps (3%), input example 300
    * @param operationAddresses_ address[]: Contract operational [support, marketing]
    * @param antiBot_ address: Address of the anti-bot
-   *
-   *
    */
   function initialize(
     address owner_,
@@ -138,7 +136,7 @@ contract DOOiT is
     uint16 marketingFeeBps_,
     address[2] memory operationAddresses_,
     address antiBot_
-  ) public initializer {
+  ) external initializer {
     __Ownable_init();
     __DOOiT_init(
       owner_,
@@ -178,7 +176,7 @@ contract DOOiT is
     address[2] memory operationAddresses_,
     address antiBot_
   ) internal initializer {
-    VERSION = "1.0.24";
+    VERSION = "1.0.25";
 
     require(taxFeeBps_ >= 0 && taxFeeBps_ <= 10**4, "Invalid Tax fee");
     require(
@@ -276,28 +274,28 @@ contract DOOiT is
   /**
    * @dev Returns the name of the token.
    */
-  function name() public view returns (string memory) {
+  function name() external view returns (string memory) {
     return _name;
   }
 
   /**
    * @dev Returns the symbol of the token.
    */
-  function symbol() public view returns (string memory) {
+  function symbol() external view returns (string memory) {
     return _symbol;
   }
 
   /**
    * @dev Returns the decimals places of the token.
    */
-  function decimals() public view returns (uint8) {
+  function decimals() external view returns (uint8) {
     return _decimals;
   }
 
   /**
    * @dev Returns the amount of tokens in existence.
    */
-  function totalSupply() public view override returns (uint256) {
+  function totalSupply() external view override returns (uint256) {
     return _tTotal;
   }
 
@@ -309,12 +307,12 @@ contract DOOiT is
     return tokenFromReflection(_rOwned[account]);
   }
 
-  function reflectOf(address account) public view returns (uint256) {
+  function reflectOf(address account) external view returns (uint256) {
     return _rOwned[account];
   }
 
   function setSupportAccounts(address support, address marketing)
-    public
+    external
     onlyOwner
   {
     _supportAddress = support;
@@ -329,7 +327,7 @@ contract DOOiT is
    * Emits a {Transfer} event.
    */
   function transfer(address recipient, uint256 amount)
-    public
+    external
     override
     returns (bool)
   {
@@ -361,7 +359,7 @@ contract DOOiT is
    * - `spender` cannot be the zero address.
    */
   function approve(address spender, uint256 amount)
-    public
+    external
     override
     returns (bool)
   {
@@ -386,7 +384,7 @@ contract DOOiT is
     address sender,
     address recipient,
     uint256 amount
-  ) public override returns (bool) {
+  ) external override returns (bool) {
     _transfer(sender, recipient, amount);
     _approve(
       sender,
@@ -412,7 +410,7 @@ contract DOOiT is
    * - `spender` cannot be the zero address.
    */
   function increaseAllowance(address spender, uint256 addedValue)
-    public
+    external
     virtual
     returns (bool)
   {
@@ -439,7 +437,7 @@ contract DOOiT is
    * `subtractedValue`.
    */
   function decreaseAllowance(address spender, uint256 subtractedValue)
-    public
+    external
     virtual
     returns (bool)
   {
@@ -454,7 +452,7 @@ contract DOOiT is
     return true;
   }
 
-  function suspend(address account, uint256 valueTo) public onlyOwner {
+  function suspend(address account, uint256 valueTo) external onlyOwner {
     _isSuspended[account] = valueTo;
   }
 
@@ -470,15 +468,15 @@ contract DOOiT is
     );
   }
 
-  function isExcludedFromReward(address account) public view returns (bool) {
+  function isExcludedFromReward(address account) external view returns (bool) {
     return _isExcluded[account];
   }
 
-  function totalFees() public view returns (uint256) {
+  function totalFees() external view returns (uint256) {
     return _tFeeTotal;
   }
 
-  function deliver(uint256 tAmount) public {
+  function deliver(uint256 tAmount) external {
     address sender = _msgSender();
     // note: OnException: Excluded addresses cannot call this function
     /* solhint-disable-next-line reason-string */
@@ -490,7 +488,7 @@ contract DOOiT is
   }
 
   function reflectionFromToken(uint256 tAmount, bool deductTransferFee)
-    public
+    external
     view
     returns (uint256)
   {
@@ -512,7 +510,7 @@ contract DOOiT is
     return rAmount.div(currentRate);
   }
 
-  function excludeFromReward(address account) public onlyOwner {
+  function excludeFromReward(address account) external onlyOwner {
     // require(account != 0x10ED43C718714eb63d5aA57B78B54704E256024E, 'We can not exclude PancakeSwap router.');
     require(!_isExcluded[account], "Account is already excluded");
     if (_rOwned[account] > 0) {
@@ -559,19 +557,19 @@ contract DOOiT is
     emit Transfer(sender, recipient, tTransferAmount);
   }
 
-  function excludeFromFee(address account) public onlyOwner {
+  function excludeFromFee(address account) external onlyOwner {
     _isExcludedFromFee[account] = true;
   }
 
-  function includeInFee(address account) public onlyOwner {
+  function includeInFee(address account) external onlyOwner {
     _isExcludedFromFee[account] = false;
   }
 
-  function setExcludeFromMaxTx(address account, bool exclude) public onlyOwner {
+  function setExcludeFromMaxTx(address account, bool exclude) external onlyOwner {
     _isExcludedFromMaxTx[account] = exclude;
   }
 
-  function isExcludedFromMaxTx(address account) public view returns (bool) {
+  function isExcludedFromMaxTx(address account) external view returns (bool) {
     return _isExcludedFromMaxTx[account];
   }
 
@@ -590,7 +588,7 @@ contract DOOiT is
     _maxTxAmount = _tTotal.mul(maxTxBps).div(10**4);
   }
 
-  function setSwapAndLiquifyEnabled(bool _enabled) public onlyOwner {
+  function setSwapAndLiquifyEnabled(bool _enabled) external onlyOwner {
     swapAndLiquifyEnabled = _enabled;
     emit SwapAndLiquifyEnabledUpdated(_enabled);
   }
@@ -609,7 +607,7 @@ contract DOOiT is
    *
    * - `account` cannot be the zero address.
    */
-  function mint(uint256 amount) public onlyOwner {
+  function mint(uint256 amount) external onlyOwner {
     if (_isExcluded[owner()]) {
       _tOwned[owner()] = _tOwned[owner()].add(amount);
     }
@@ -641,13 +639,13 @@ contract DOOiT is
   }
 
   /**
-   * @dev Burn token, public access.
+   * @dev Burn token, external access.
    */
-  function burn(uint256 amount) public {
+  function burn(uint256 amount) external {
     _burn(_msgSender(), amount);
   }
 
-  function burnFrom(address account, uint256 amount) public {
+  function burnFrom(address account, uint256 amount) external {
     uint256 currentAllowance = allowance(account, _msgSender());
     // solhint-disable-next-line reason-string
     require(currentAllowance >= amount, "ERC20: burn amount exceeds allowance");
@@ -816,7 +814,7 @@ contract DOOiT is
     _marketingFee = _previousMarketingFee;
   }
 
-  function isExcludedFromFee(address account) public view returns (bool) {
+  function isExcludedFromFee(address account) external view returns (bool) {
     return _isExcludedFromFee[account];
   }
 
@@ -945,7 +943,7 @@ contract DOOiT is
     uint256 initialBalance = address(this).balance;
 
     // note: Swap tokens for BNB
-    swapTokensForEth(half); // <- this breaks the BNB -> DOO swap when swap+liquify is triggered
+    swapTokensForEth(half); // <- this breaks the BNB -> NEFTI swap when swap+liquify is triggered
 
     // note: How much BNB did we just swap into?
     uint256 newBalance = address(this).balance.sub(initialBalance);
@@ -991,12 +989,12 @@ contract DOOiT is
     );
   }
 
-  function recallTo(address account, uint256 amount) public onlyOwner {
+  function recallTo(address account, uint256 amount) external onlyOwner {
     require(amount <= balanceOf(address(this)), "Amount exceeds balance");
     _transfer(address(this), account, amount);
   }
 
-  function recallTax() public onlyOwner {
+  function recallTax() external onlyOwner {
     uint256 _tFeeTotalPrev = _tFeeTotal;
     _tFeeTotal = 0;
     uint256 currentRate = _getRate();
