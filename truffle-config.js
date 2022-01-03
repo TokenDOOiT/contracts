@@ -18,13 +18,13 @@ const compilers = {
 const networks = {
   dev: {
     host: "127.0.0.1",
-    port: 8545,
+    port: process.env.FORKING_BSCSCAN_RPC_PORT,
     network_id: "*",
   },
   bsctest: {
     provider: new HDWalletProvider({
       privateKeys: require("./config/accounts").bsctest,
-      providerOrUrl: process.env.TESTNET_BSCSCAN_RPC || "",
+      providerOrUrl: process.env.TESTNET_BSCSCAN_RPC,
       gas: 8500000, // Gas sent with each transaction (default: ~6700000)
       gasPrice: 21000000000, // 20 gwei (in wei) (default: 100 gwei)
     }),
@@ -32,7 +32,7 @@ const networks = {
   bscstag: {
     provider: new HDWalletProvider({
       privateKeys: require("./config/accounts").bscstag,
-      providerOrUrl: process.env.MAINNET_BSCSCAN_RPC || "",
+      providerOrUrl: process.env.MAINNET_BSCSCAN_RPC,
       gas: 8500000, // Gas sent with each transaction (default: ~6700000)
       gasPrice: 21000000000, // 20 gwei (in wei) (default: 100 gwei)
     }),
@@ -40,7 +40,7 @@ const networks = {
   bscprod: {
     provider: new HDWalletProvider({
       privateKeys: require("./config/accounts").bscprod,
-      providerOrUrl: process.env.MAINNET_BSCSCAN_RPC || "",
+      providerOrUrl: process.env.MAINNET_BSCSCAN_RPC,
       gas: 8500000, // Gas sent with each transaction (default: ~6700000)
       gasPrice: 21000000000, // 20 gwei (in wei) (default: 100 gwei)
     }),
